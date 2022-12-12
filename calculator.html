@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="calculator.css">
+<script src="calculator.js"></script>
+<section class = "container">
+    <section  class="display">
+        <div id="memory">
+
+        </div>
+        <div id="display">
+
+        </div>
+    </section>
+    <section class="buttons">
+        <button id="buttonOFF" onclick="whatOnDisplay('clear')">OFF</button>
+        <button id="buttonReverse" onclick="reverse()" >+/-</button>
+        <button id="buttonRadical" onclick="whatOperator('radical')">&radic;</button>
+        <button id="buttonDivision" onclick="whatOperator('division')">%</button>
+        <button id="buttonMRC" onclick="memoryReadClear()">MRC</button>
+        <button id="buttonMinusM"onclick="memoryMinus()">M-</button>
+        <button id="buttonPlusM" onclick="memoryPlus()">M+</button>
+        <button id="buttonExponent" onclick="whatOperator('^')">^</button>
+        <button id="buttonSeven" onclick="whatOnDisplay(7)">7</button>
+        <button id="buttonEight" onclick="whatOnDisplay(8)">8</button>
+        <button id="buttonNine" onclick="whatOnDisplay(9)">9</button>
+        <button id="buttonMultyply" onclick="whatOperator('x')">x</button>
+        <button id="buttonFour" onclick="whatOnDisplay(4)">4</button>
+        <button id="buttonFive" onclick="whatOnDisplay(5)">5</button>
+        <button id="buttonSix" onclick="whatOnDisplay(6)">6</button>
+        <button id="buttonMinus" onclick="whatOperator('-')">-</button>
+        <button id="buttonOne" onclick="whatOnDisplay(1)">1</button>
+        <button id="buttonTwo" onclick="whatOnDisplay(2)">2</button>
+        <button id="buttonThree" onclick="whatOnDisplay(3)">3</button>
+        <button id="buttonPlus" onclick="whatOperator('+')" class="plus">+</button>
+        <button id="buttonZero" onclick="whatOnDisplay(0)">0</button>
+        <button id="buttonDot" onclick="whatOnDisplay('.')">.</button>
+        <button id="buttonEqual" onclick="calculating()">=</button>
+    </section>
+</section>
